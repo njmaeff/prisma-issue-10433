@@ -1,0 +1,18 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+    provider = "mongodb"
+    url      = env("MONGO_HOST")
+}
+
+generator client {
+    provider        = "prisma-client-js"
+    previewFeatures = ["mongoDb"]
+    output          = "../server/client"
+}
+
+model User {
+    id   String @id @default(auto()) @map("_id") @db.ObjectId
+    Name String
+}
