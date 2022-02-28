@@ -1,5 +1,7 @@
 # Repro
 
+Re: Issue [https://github.com/prisma/prisma/issues/10433](https://github.com/prisma/prisma/issues/10433)
+
 ## Version
 
 ```txt
